@@ -328,9 +328,9 @@ body > main > div.name > h1 {
 @media screen and (min-width: 320px) and (max-width: 783px) {
     .name {
         position: absolute;
-        bottom: 12rem;
-        left: 3rem;
-        font-size: 23px;
+        bottom: 17rem;
+        left: 6rem;
+        font-size: 25px;
         color: rgb(95 0 133);
     }
  /*foto iago*/
@@ -375,16 +375,12 @@ nav ul a:hover{
 }
 span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
     font-size: 2rem;
-    bottom: 26rem;
+    bottom: 17rem;
     display: ruby-text;
     position: absolute;
     font-weight: lighter;
     left: 3rem;
     color: #525253;
-}
-.typing {
-    font-size: 20px;
-    left: 0;
 }
 
 .typing {
@@ -394,10 +390,10 @@ span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 
     white-space: nowrap;
     width: 0px;
     animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
-    bottom: 32rem;
+    bottom: 25rem;
     position: absolute;
-    font-size: 14px;
-    left: 2rem;
+    font-size: 16px;
+    left: 3rem;
     gap: 30px;
     display: flex
 ;
@@ -452,7 +448,7 @@ button.button-51 {
     white-space: nowrap;
     bottom: -11%;
     position: absolute;
-    left: 13rem;
+    left: 15rem;
 }
 
         .button-50:hover,
