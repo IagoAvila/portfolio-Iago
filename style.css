@@ -31,7 +31,6 @@ span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 
 
 body > main > div.name > h1 {
     font-weight: 100;
-    font-size: 7rem;
 }
 .name {
     position: absolute;
@@ -330,7 +329,6 @@ body > main > div.name > h1 {
         position: absolute;
         bottom: 17rem;
         left: 6rem;
-        font-size: 25px;
         color: rgb(95 0 133);
     }
  /*foto iago*/
@@ -375,12 +373,13 @@ nav ul a:hover{
 }
 span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
     font-size: 2rem;
-    bottom: 17rem;
+    bottom: 15rem;
     display: ruby-text;
     position: absolute;
     font-weight: lighter;
     left: 3rem;
     color: #525253;
+    text-align: center;
 }
 
 .typing {
@@ -537,7 +536,6 @@ button.button-51 {
     }
     body > main > div.name > h1 {
         font-weight: 100;
-        font-size: 3rem;
         display: ruby-text;
     }
     .name {
@@ -548,7 +546,7 @@ button.button-51 {
       .name h1 {
         font-size: clamp(2rem, 5vw, 3rem); /* Ajuste automático do tamanho */
         font-weight: bold;
-        color: rgb(95 0 133); /* Cor semelhante ao Tailwind text-zinc-900 */
+        color: rgb(95 0 133);
       }
 }
   
