@@ -325,12 +325,6 @@ body > main > div.name > h1 {
 
 /*mobile*/
 @media screen and (min-width: 320px) and (max-width: 783px) {
-    .name {
-        position: absolute;
-        bottom: 17rem;
-        left: 6rem;
-        color: rgb(95 0 133);
-    }
  /*foto iago*/
  body > header > img {
     height: 87px;
@@ -377,7 +371,8 @@ span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 
     display: ruby-text;
     position: absolute;
     font-weight: lighter;
-    left: 3rem;
+    left: 0;
+    right: 0;
     color: #525253;
     text-align: center;
 }
@@ -445,7 +440,7 @@ button.button-51 {
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-    bottom: -11%;
+    bottom: -18%;
     position: absolute;
     left: 16rem;
 }
@@ -483,7 +478,7 @@ button.button-51 {
         -webkit-user-select: none;
         vertical-align: middle;
         white-space: nowrap;
-        bottom: -11%;
+        bottom: -18%;
         position: absolute;
         left: 1rem;
     }
@@ -541,6 +536,11 @@ button.button-51 {
     .name {
         text-align: center;
         margin-top: 1rem;
+        position: absolute;
+        bottom: 14rem;
+        left: 0;
+        color: rgb(95 0 133);
+        right: 0;
       }
       
       .name h1 {
