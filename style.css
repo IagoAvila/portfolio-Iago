@@ -390,13 +390,13 @@ span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 
     white-space: nowrap;
     width: 0px;
     animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    text-align: center;
     bottom: 25rem;
     position: absolute;
     font-size: 16px;
     left: 3rem;
     gap: 30px;
-    display: flex
-;
+    display: flex;
 }
 
 
@@ -448,7 +448,7 @@ button.button-51 {
     white-space: nowrap;
     bottom: -11%;
     position: absolute;
-    left: 15rem;
+    left: 16rem;
 }
 
         .button-50:hover,
@@ -540,5 +540,15 @@ button.button-51 {
         font-size: 3rem;
         display: ruby-text;
     }
+    .name {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      
+      .name h1 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Ajuste automático do tamanho */
+        font-weight: bold;
+        color: rgb(95 0 133); /* Cor semelhante ao Tailwind text-zinc-900 */
+      }
 }
   
