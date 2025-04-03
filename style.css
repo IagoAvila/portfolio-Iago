@@ -10,119 +10,16 @@
 
 body {
     background-color: #f7f7f7;
-}
-body {
     display: flex;
     justify-content: center;
+
 }
+
 header {
     background-color: #ffffff !important;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
-    font-size: 3rem;
-    bottom: 27rem;
-    display: ruby-text;
-    position: absolute;
-    font-weight: lighter;
-    left: 23rem;
-    color: #525253;
-}
 
-body > main > div.name > h1 {
-    font-weight: 100;
-}
-.name {
-    position: absolute;
-    bottom: 19rem;
-    left: 23rem;
-    font-size: 49px;
-    color: rgb(95 0 133);
-}
-.button-50 {
-    appearance: button;
-    background-color: #000;
-    background-image: none;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 10px 0;
-    overflow: visible;
-    padding: 12px 40px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-  
-  .button-50:focus {
-    text-decoration: none;
-  }
-  
-  .button-50:hover {
-    text-decoration: none;
-  }
-  
-  .button-50:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .button-50:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  
-
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: translateX(-100%); /* Inicialmente fora da tela */
-    transition: transform 0.3s ease;
-    z-index: 5;
-}
-
-.menu.active {
-    transform: translateX(0); /* Menu entra na tela quando ativo */
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Botão de fechar */
-.close-btn {
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
   /*desktop*/
   @media screen and (min-width: 784px) {
     * {
@@ -132,6 +29,13 @@ body > main > div.name > h1 {
         padding: 0;
     }
 
+    body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
+        font-size: 4rem;
+        text-transform: uppercase;
+        left: 23rem;
+        color: #525253;
+    }
+
     section#inicial {
         display: flex;
         max-width: 100%;
@@ -139,14 +43,31 @@ body > main > div.name > h1 {
         height: 100%;
         justify-content: center;
         align-items: center;
-        z-index: 1;
         position: absolute;
         left: 0;
         right: 0;
     }
+
+    /*titulo*/
+    section.flex.items-center.justify-center.text-center.h-screen {
+        display: flex;
+        position: absolute;
+        bottom: 23rem;
+        justify-content: center;
+        left: 0rem;
+        width: 100%;
+        max-width: 100%;
+        height: 16%;
+    }
     body {
         max-width: 1400px;
         margin: 0 auto;
+    }
+
+    .name {
+        position: relative;
+        left: -9rem;
+        color: rgb(95 0 133);
     }
 
     /* Ajuste do header */
@@ -192,7 +113,17 @@ body > main > div.name > h1 {
 
     }
 
- 
+    .button-50:active {
+        box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+        outline: 0;
+      }
+      
+      .button-50:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+      }
+      
+    
     button.button-51 {
         padding: 12px 50px;
       }
@@ -380,16 +311,11 @@ nav ul a:hover{
     color: rgb(163 22 221);
 
 }
-span.mb-4.font-medium.text-2xl\/3.text-zinc-700.md\:text-3xl\/3.lg\:text-5xl\/3 {
-    font-size: 2rem;
-    bottom: 15rem;
-    display: ruby-text;
-    position: absolute;
-    font-weight: lighter;
-    left: 0;
-    right: 0;
+body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
+    font-size: 4rem;
+    text-transform: uppercase;
+    left: 23rem;
     color: #525253;
-    text-align: center;
 }
 
 .typing {
@@ -510,7 +436,45 @@ button.button-51 {
         font-size: 20px;
         color: #000;
     }
+    
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-100%); /* Inicialmente fora da tela */
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
 
+.menu.active {
+    transform: translateX(0); /* Menu entra na tela quando ativo */
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Botão de fechar */
+.close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 
     header nav ul {
         display: none; /* Esconde o menu tradicional */
@@ -544,24 +508,21 @@ button.button-51 {
         transition: transform 0.3s ease;
         z-index: 5;
     }
-    body > main > div.name > h1 {
-        font-weight: 100;
-        display: ruby-text;
+    
+     
+      .name {
+        position: relative;
+        color: rgb(95 0 133);
     }
-    .name {
-        text-align: center;
-        margin-top: 1rem;
+    section.flex.items-center.justify-center.text-center.h-screen {
+        display: flex;
         position: absolute;
-        bottom: 14rem;
-        left: 0;
-        color: rgb(95 0 133);
-        right: 0;
-      }
-      
-      .name h1 {
-        font-size: clamp(2rem, 5vw, 3rem); /* Ajuste automático do tamanho */
-        font-weight: bold;
-        color: rgb(95 0 133);
-      }
+        bottom: 13rem;
+        justify-content: center;
+        left: 0rem;
+        width: 100%;
+        max-width: 100%;
+        height: 16%;
+    }
 }
   
