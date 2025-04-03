@@ -312,7 +312,7 @@ nav ul a:hover{
 
 }
 body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
-    font-size: 4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     left: 23rem;
     color: #525253;
