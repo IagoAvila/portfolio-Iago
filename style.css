@@ -435,18 +435,19 @@ p.mt-4.text-lg.text-zinc-100 {
 }
 
 /*linha header*/
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    box-shadow: 0px 4px 10px rgb(0 0 0 / 53%);
-    max-width: 1511px;
-    width: 105%;
-    margin: 0 auto;
-    position: fixed;
-    z-index: 10;
-}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        box-shadow: 0px 4px 10px rgb(0 0 0 / 53%);
+        max-width: 1511px;
+        width: 329vw;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 10;
+    }
+
 nav {
     display: none;
 }
@@ -678,4 +679,3 @@ button.button-51 {
         height: 16%;
     }
 }
-  
