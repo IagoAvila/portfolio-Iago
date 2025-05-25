@@ -7,19 +7,20 @@
     <link rel="icon" type="image/png" href="assets/iago.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
 
-    <header>
+    <header data-aos="fade-down">
         <img src="assets/iago.jpeg" alt="Foto de Iago">
-        <div class="menu-btn">&#9776;</div> <!-- Botão para abrir o menu -->
+        <div class="menu-btn">&#9776;</div>
         <nav>
             <ul class="flex h-full w-full items-center justify-center gap-6">
                 <li><a href="home">Home</a></li>
-                <li><a href="#text-center max-w-3xl mx-auto p-6">Sobre Mim</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="Experiencias">Experiências</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="skills.html">Skills</a></li>
@@ -48,112 +49,117 @@
         <section id="inicial">
             <h1 class="typing">Bem-vindo(a) ao meu portfolio!</h1>
         </section>
+
         <section class="flex items-center justify-center text-center h-screen">
             <div class="mx-auto flex w-full max-w-5xl flex-col items-center justify-center px-2 pb-10 md:pb-40">
-                <div style="opacity: 1; transform: none;">
+                <div style="opacity: 1; transform: none;" data-aos="fade-up">
                     <span class="mb-4 font-medium text-2xl md:text-3xl lg:text-5xl text-zinc-700">Web Developer</span>
                 </div>
-                <div class="name">
+                <div class="name" data-aos="fade-up">
                     <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">Iago Ávila</h1>
                 </div>
             </div>
         </section>
-        
+
         <div class="button-1">
             <a href="https://github.com" target="_blank">
                 <button class="button-50" role="button">Currículo</button>
             </a>
         </div>
+
         <div class="button-2">
             <a href="projetos.html" target="_blank">
                 <button class="button-51" role="button">Projetos</button>
             </a>
         </div>
+
         <div class="space-y-10">
             <!-- SOBRE MIM -->
-            <section id="sobre-mim" class="text-center max-w-3xl mx-auto p-6">
-              <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
-                Sobre Mim
-              </h2>
-              <p class="mt-4 text-lg text-zinc-100 text-justify p-6 bg-gradient-to-b from-white/20 to-black/20 rounded-xl shadow-md hover:bg-gradient-to-b hover:from-white/20 hover:to-blue-900/80">
-                Sou um apaixonado por tecnologia e inovação, especializado em 
-                <strong>HTML, JavaScript, CSS</strong> e <strong>React</strong>,
-                além de diversos outros frameworks. Meu objetivo é transformar ideias em experiências digitais incríveis.
-                Com ampla experiência em <strong>atendimento ao cliente</strong>, 
-                <strong>suporte técnico</strong> e <strong>desenvolvimento front-end</strong>,
-                minha missão é criar interfaces intuitivas e funcionais que elevam a experiência do usuário a outro nível.
-                Sou movido pelo aprendizado contínuo e estou sempre atento às novas tendências e tecnologias do universo do desenvolvimento.
-                Evoluir constantemente é o que me motiva!
-                Acompanhe minha jornada e confira meus projetos no GitHub: 
-                <a href="https://github.com/IagoAvila" target="_blank">IagoAvila</a>.
-                Vamos construir algo incrível juntos!
-              </p>
-            </section>
-          
-            <!-- EXPERIÊNCIAS -->
-            <section id="experiencias" class="text-center max-w-3xl mx-auto p-6 mb-10">
-              <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
-                Experiências
-              </h2>
-              <p class="mt-4 text-lg text-zinc-600 text-justify">
-                <strong>Estagiário em suporte técnico / Desenvolvedor Front-End | Globe Comerce – Remoto (01/2022 - 01/2023)</strong><br>
-                Gerenciamento completo de plataforma E-commerce (Loja Integrada), incluindo suporte técnico direto ao cliente. Desenvolvimento e manutenção de interfaces com HTML, CSS e JavaScript, assegurando design responsivo por meio de Media Queries e layouts flexíveis. Atuação na identificação e resolução de problemas relacionados à aparência e funcionalidade, 
-                garantindo uma experiência de usuário consistente e otimizada em todos os dispositivos.
-              </p>
-              <p class="mt-4 text-lg text-zinc-600 text-justify">
-               <strong> Desenvolvedor Web | Empório dos Doces LTDA - Remoto (07/2024 – Atual) </strong>  <br> 
-    Responsável pelo desenvolvimento e manutenção do site da empresa, garantindo uma navegação intuitiva e 
-    responsiva. Atuei na implementação de novas funcionalidades e na otimização da loja virtual para melhorar a 
-    experiência do cliente.
-    E-commerce: Gerenciamento da loja virtual via Nuvemshop.
-    Otimização Web: Melhorias em performance, acessibilidade e SEO.
-              </p>
-            </section>
-          </div>
-          <div class="space-y-10">
-            <section id="Projetos" class="text-center max-w-3xl mx-auto p-6 mb-10">
-              <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
-                Projetos 
-              </h2>
-          
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                <!-- Projeto 1 -->
-                <div class="projeto-card">
-                  <a href="https://github.com/IagoAvila/pet-life" target="_blank">
-                    <img src="assets/pet-life.png" alt="Projeto Pet Life" class="projeto-img">
-                  </a>
-                </div>
-              
-                <!-- Projeto 2 -->
-                <div class="projeto-card">
-                  <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
-                    <img src="assets/upgrade-mind.png" alt="Projeto Upgrade Mind" class="projeto-img">
-                  </a>
-                </div>   
-                  <!-- Projeto 3 -->
-                  <div class="projeto-card">
-                    <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
-                      <img src="assets/teste.png" alt="Formulário" class="projeto-img">
-                    </a>
-                  </div>                         
-            </section>
-            <div id="skills">
-              <section id="Skills" class="text-center max-w-3xl mx-auto p-6 mb-10">
+            <section id="sobre-mim" class="text-center max-w-3xl mx-auto p-6" data-aos="fade-up">
                 <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
-                  Skills
+                    Sobre Mim
                 </h2>
-                <br>
-                <div class="tecnologias flex justify-center gap-6 mt-2 text-5xl">
-                  <i class="devicon-html5-plain" title="HTML5"></i>
-                  <i class="devicon-css3-plain" title="CSS3"></i>
-                  <i class="devicon-javascript-plain" title="JavaScript"></i>
-                  <i class="devicon-react-original" title="React"></i>
-                  <i class="devicon-angularjs-plain" title="Angular"></i>
-                  <i class="devicon-tailwindcss-original" title="Tailwind CSS"></i>
+                <p class="mt-4 text-lg text-zinc-100 text-justify p-6 bg-gradient-to-b from-white/20 to-black/20 rounded-xl shadow-md hover:bg-gradient-to-b hover:from-white/20 hover:to-blue-900/80">
+                    Sou um apaixonado por tecnologia e inovação, especializado em 
+                    <strong>HTML, JavaScript, CSS</strong> e <strong>React</strong>,
+                    além de diversos outros frameworks. Meu objetivo é transformar ideias em experiências digitais incríveis.
+                    Com ampla experiência em <strong>atendimento ao cliente</strong>, 
+                    <strong>suporte técnico</strong> e <strong>desenvolvimento front-end</strong>,
+                    minha missão é criar interfaces intuitivas e funcionais que elevam a experiência do usuário a outro nível.
+                    Sou movido pelo aprendizado contínuo e estou sempre atento às novas tendências e tecnologias do universo do desenvolvimento.
+                    Evoluir constantemente é o que me motiva!
+                    Acompanhe minha jornada e confira meus projetos no GitHub: 
+                    <a href="https://github.com/IagoAvila" target="_blank">IagoAvila</a>.
+                    Vamos construir algo incrível juntos!
+                </p>
+            </section>
+        </div>
+
+        <!-- EXPERIÊNCIAS -->
+        <div class="space-y-10">
+            <section id="experiencias" class="text-center max-w-3xl mx-auto p-6 mb-10" data-aos="fade-down">
+                <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
+                    Experiências
+                </h2>
+                <p class="mt-4 text-lg text-zinc-600 text-justify">
+                    <strong>Estagiário em suporte técnico / Desenvolvedor Front-End | Globe Comerce – Remoto (01/2022 - 01/2023)</strong><br>
+                    Gerenciamento completo de plataforma E-commerce (Loja Integrada), incluindo suporte técnico direto ao cliente. Desenvolvimento e manutenção de interfaces com HTML, CSS e JavaScript, assegurando design responsivo por meio de Media Queries e layouts flexíveis. Atuação na identificação e resolução de problemas relacionados à aparência e funcionalidade, 
+                    garantindo uma experiência de usuário consistente e otimizada em todos os dispositivos.
+                </p>
+                <p class="mt-4 text-lg text-zinc-600 text-justify">
+                    <strong>Desenvolvedor Web | Empório dos Doces LTDA - Remoto (07/2024 – Atual)</strong><br> 
+                    Responsável pelo desenvolvimento e manutenção do site da empresa, garantindo uma navegação intuitiva e 
+                    responsiva. Atuei na implementação de novas funcionalidades e na otimização da loja virtual para melhorar a 
+                    experiência do cliente.
+                    E-commerce: Gerenciamento da loja virtual via Nuvemshop.
+                    Otimização Web: Melhorias em performance, acessibilidade e SEO.
+                </p>
+            </section>
+        </div>
+
+        <!-- PROJETOS -->
+        <div class="space-y-10">
+            <section id="Projetos" class="text-center max-w-3xl mx-auto p-6 mb-10" data-aos="fade-up">
+                <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
+                    Projetos 
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                    <div class="projeto-card" data-aos="fade-up">
+                        <a href="https://github.com/IagoAvila/pet-life" target="_blank">
+                            <img src="assets/pet-life.png" alt="Projeto Pet Life" class="projeto-img">
+                        </a>
+                    </div>
+                    <div class="projeto-card" data-aos="fade-up">
+                        <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
+                            <img src="assets/upgrade-mind.png" alt="Projeto Upgrade Mind" class="projeto-img">
+                        </a>
+                    </div>   
+                    <div class="projeto-card" data-aos="fade-up">
+                        <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
+                            <img src="assets/teste.png" alt="Formulário" class="projeto-img">
+                        </a>
+                    </div>                         
                 </div>
-              </section>
+            </section>
+
+            <!-- SKILLS -->
+            <div id="skills">
+                <section id="Skills" class="text-center max-w-3xl mx-auto p-6 mb-10">
+                    <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
+                        Skills
+                    </h2>
+                    <br>
+                    <div class="tecnologias flex justify-center gap-6 mt-2 text-5xl" data-aos="fade-up">
+                        <i class="devicon-html5-plain" title="HTML5"></i>
+                        <i class="devicon-css3-plain" title="CSS3"></i>
+                        <i class="devicon-javascript-plain" title="JavaScript"></i>
+                        <i class="devicon-react-original" title="React"></i>
+                        <i class="devicon-angularjs-plain" title="Angular"></i>
+                        <i class="devicon-tailwindcss-original" title="Tailwind CSS"></i>
+                    </div>
+                </section>
             </div>
-            
+        </div>
     </main>
 
     <script>
@@ -171,5 +177,17 @@
         });
     </script>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // duração do efeito
+            once: true, // anima só na primeira vez que aparece
+        });
+    </script>
+    <script>
+        window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+    </script>
 </body>
 </html>

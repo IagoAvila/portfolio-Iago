@@ -37,7 +37,9 @@ header {
         left: 23rem;
         color: #525253;
     }
-
+    #menu {
+        display: none;
+    }
     section#inicial {
         display: flex;
         max-width: 100%;
@@ -376,21 +378,22 @@ header {
             align-items: center;
 
           }
-          
-          [class^=devicon-], [class*=" devicon-"] {
-            font-family: "devicon" !important;
+        
+          .tecnologias [class^="devicon-"] {
+            color: #000;
             font-size: 5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+            display: inline-block;
+            gap: 30px;
+            column-count: 2;
+            padding: 7px 17px;
         }
-    
-        .tecnologias [class^="devicon-"] {
-            color: #ea580c;
-            transition: color 0.3s ease, transform 0.3s ease;
-          }
           
           .tecnologias [class^="devicon-"]:hover {
             color: #010695;
             transform: translateY(-6px);
           }
+          
         }          
 
 /*mobile*/
