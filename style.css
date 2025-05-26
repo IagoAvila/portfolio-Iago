@@ -425,6 +425,16 @@ p.mt-4.text-lg.text-zinc-100 {
 
 /*mobile*/
 @media screen and (min-width: 320px) and (max-width: 783px) {
+  .space-y-10 {
+    display: grid;
+    height: 88vh;
+    top: -56rem;
+    left: -10rem;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+}
  /*foto iago*/
  body > header > img {
     height: 87px;
@@ -442,7 +452,7 @@ p.mt-4.text-lg.text-zinc-100 {
         padding: 16px;
         box-shadow: 0px 4px 10px rgb(0 0 0 / 53%);
         max-width: 1511px;
-        width: 329vw;
+        width: 100vw;
         margin: 0 auto;
         position: fixed;
         z-index: 10;
@@ -466,12 +476,37 @@ nav ul a:hover{
     color: #010695;
 
 }
+
+section#inicial {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+}
 body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
     font-size: 2rem;
     text-transform: uppercase;
     color: #525253;
 }
-
+/* Título das sections */
+          h2.text-3xl.font-light.text-zinc-800 {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+          }
+          
+          h2.text-3xl.font-light.text-zinc-800:hover {
+            color: #010695;
+          }
+          
+          /* Parágrafo dentro das sections */
 .typing {
     font-family: 'Courier New', Courier, monospace;
     overflow-x: scroll;
