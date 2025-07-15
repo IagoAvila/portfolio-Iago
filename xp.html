@@ -13,8 +13,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-
-    <header data-aos="fade-down">
+        <header data-aos="fade-down">
         <img src="assets/iago.jpeg" alt="Foto de Iago">
         <div class="menu-btn">&#9776;</div>
         <nav>
@@ -26,7 +25,6 @@
             </ul>
         </nav>
     </header>
-
     <div class="menu" id="menu">
         <span class="close-btn" id="close-btn">&times;</span>
         <a href="https://www.linkedin.com" target="_blank">
@@ -40,62 +38,45 @@
         <a href="Experiencias">Experiências</a>
         <a href="skills.html">Skills</a>
     </div>
+<section id="xp">
+  <h2>EXPERIÊNCIAS</h2>
+        <div class="xp-container">
+            <img src="#" alt="#">
+            <div class="xp-text">
+                <p class="subtitle"> Iago Ávila Batista <br> WEB DEVELOPER</p>
 
-    <main>
-        <section id="inicial">
-            <h1 class="typing">Bem-vindo(a) ao meu portfolio!</h1>
-        </section>
-        <section class="flex items-center justify-center text-center h-screen">
-            <div class="mx-auto flex w-full max-w-5xl flex-col items-center justify-center px-2 pb-10 md:pb-40">
-                <div style="opacity: 1; transform: none;" data-aos="fade-up">
-                    <span class="mb-4 font-medium text-2xl md:text-3xl lg:text-5xl text-zinc-700">Web Developer</span>
-                </div>
-                <div class="name" data-aos="fade-up">
-                    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">Iago Ávila</h1>
-                </div>
-            </div>
-        </section>
-
-        <div class="button-1">
-            <a href="https://github.com" target="_blank">
-                <button class="button-50" role="button">Currículo</button>
+                 <p class="mt-4 text-lg text-zinc-600 text-justify">
+                    <strong>Estagiário em suporte técnico / Desenvolvedor Front-End | Globe Comerce – Remoto (01/2022 - 01/2023)</strong><br>
+                    Gerenciamento completo de plataforma E-commerce (Loja Integrada), incluindo suporte técnico direto ao cliente. Desenvolvimento e manutenção de interfaces com HTML, CSS e JavaScript, assegurando design responsivo por meio de Media Queries e layouts flexíveis. Atuação na identificação e resolução de problemas relacionados à aparência e funcionalidade, 
+                    garantindo uma experiência de usuário consistente e otimizada em todos os dispositivos.
+                </p>
+                <p class="mt-4 text-lg text-zinc-600 text-justify">
+                    <strong>Desenvolvedor Web | Empório dos Doces LTDA - Remoto (07/2024 – Atual)</strong><br> 
+                    Responsável pelo desenvolvimento e manutenção do site da empresa, garantindo uma navegação intuitiva e 
+                    responsiva. Atuei na implementação de novas funcionalidades e na otimização da loja virtual para melhorar a 
+                    experiência do cliente.
+                    E-commerce: Gerenciamento da loja virtual via Nuvemshop.
+                    Otimização Web: Melhorias em performance, acessibilidade e SEO.
+                </p>
+            
+                 <div class="xp-button">
+      <a href="https://github.com" target="_blank">
+            <img src="assets/github.png" alt="Github" width="15px">
             </a>
+<a href="https://linkedin.com" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" width="15px" />
+          </a>
         </div>
-
-        <div class="button-2">
-            <a href="projetos.html" target="_blank">
-                <button class="button-51" role="button">Projetos</button>
-            </a>
-        </div>
-        
-        <!-- PROJETOS -->
-            <section id="Projetos" class="text-center max-w-3xl mx-auto p-6 mb-10" data-aos="fade-up">
-                <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
-                    Projetos 
-                </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-                    <div class="projeto-card" data-aos="fade-up">
-                        <a href="https://github.com/IagoAvila/pet-life" target="_blank">
-                            <img src="assets/pet-life.png" alt="Projeto Pet Life" class="projeto-img">
-                        </a>
-                    </div>
-                    <div class="projeto-card" data-aos="fade-up">
-                        <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
-                            <img src="assets/upgrade-mind.png" alt="Projeto Upgrade Mind" class="projeto-img">
-                        </a>
-                    </div>   
-                    <div class="projeto-card" data-aos="fade-up">
-                        <a href="https://github.com/IagoAvila/projeto-upgrade-mind.github.io" target="_blank">
-                            <img src="assets/teste.png" alt="Formulário" class="projeto-img">
-                        </a>
-                    </div>                         
-                </div>
-            </section>
             </div>
         </div>
-    </main>
 
-    <script>
+
+        </section>
+
+
+
+
+      <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menu = document.getElementById("menu");
             const menuBtn = document.querySelector(".menu-btn");
@@ -121,6 +102,5 @@
         window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
-    </script>
+  </script>
 </body>
-</html>

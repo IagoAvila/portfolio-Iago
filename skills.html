@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/iago.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+        <header data-aos="fade-down">
+        <img src="assets/iago.jpeg" alt="Foto de Iago">
+        <div class="menu-btn">&#9776;</div>
+        <nav>
+            <ul class="flex h-full w-full items-center justify-center gap-6">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="xp.html">Experiências</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="menu" id="menu">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="devicon-linkedin-plain" alt="LinkedIn" width="30px"></i>
+        </a>
+        <a href="https://github.com" target="_blank">
+            <img src="assets/github.png" alt="Github" width="30px">
+        </a>
+        <a href="home">Home</a>
+        <a href="body > main > section.text-center.max-w-3xl.mx-auto.p-6">Sobre Mim</a>
+        <a href="Experiencias">Experiências</a>
+        <a href="skills.html">Skills</a>
+    </div>
+
+<section id="Skills" class="text-center max-w-3xl mx-auto p-6 mb-10">
+  <h2 class="text-3xl font-light text-zinc-800 underline hover:text-blue-800 uppercase">
+    Skills
+  </h2>
+
+  <p class="text-zinc-600 mt-4 text-sm md:text-base">
+    Tecnologias e ferramentas que utilizo no meu dia a dia de desenvolvimento.
+  </p>
+
+  <!-- Ícones de tecnologias -->
+  <div class="tecnologias flex flex-wrap justify-center gap-6 mt-6 text-5xl" data-aos="fade-up">
+    <i class="devicon-html5-plain" title="HTML5"></i>
+    <i class="devicon-css3-plain" title="CSS3"></i>
+    <i class="devicon-javascript-plain" title="JavaScript"></i>
+    <i class="devicon-react-original" title="React"></i>
+    <i class="devicon-angularjs-plain" title="Angular"></i>
+    <i class="devicon-tailwindcss-original" title="Tailwind CSS"></i>
+    <i class="devicon-csharp-plain" title="C#"></i>
+    <i class="devicon-dotnetcore-plain" title=".NET Core"></i>
+    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+    <i class="devicon-git-plain" title="Git"></i>
+    <i class="devicon-github-original" title="GitHub"></i>
+  </div>
+
+  <!-- Soft skills opcionais -->
+  <div class="mt-10 text-left">
+    <h3 class="text-lg font-semibold text-zinc-700 mb-2">Soft Skills</h3>
+    <ul class="list-disc list-inside text-sm text-zinc-600">
+      <li>Boa comunicação e trabalho em equipe</li>
+      <li>Organização e responsabilidade</li>
+      <li>Facilidade em aprender novas tecnologias</li>
+      <li>Autonomia para resolver problemas</li>
+    </ul>
+  </div>
+</section>
+
+    
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.getElementById("menu");
+            const menuBtn = document.querySelector(".menu-btn");
+            const closeBtn = document.querySelector(".close-btn");
+
+            function toggleMenu() {
+                menu.classList.toggle("active");
+            }
+
+            menuBtn.addEventListener("click", toggleMenu);
+            closeBtn.addEventListener("click", toggleMenu);
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // duração do efeito
+            once: true, // anima só na primeira vez que aparece
+        });
+    </script>
+    <script>
+        window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+  </script>
+</body>
