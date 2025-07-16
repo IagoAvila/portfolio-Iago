@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -838,60 +838,78 @@ button.button-51 {
         white-space: nowrap;
         bottom: -18%;
         position: absolute;
-        left: 1rem;
     }
 
     
     i.devicon-linkedin-plain {
         display: block;
     }
+
+
+ /*menu mobile*/
+
+
     #menu > img {
         display: block;
     }
 
-    .menu a {
-        font-size: 20px;
-        color: #000;
-    }
-     .menu {
+
+#menu > a:nth-child(2) > img {
+    width: 3rem;
+}
+
+    #menu > a:nth-child(2) {
+    margin-top: 30rem;
+    position: absolute;
+    margin-left: 7rem;
+}
+#menu > a:nth-child(3) {
+    position: absolute;
+    margin-top: 30rem;
+    margin-right: 7rem;
+}    
+#menu > a:nth-child(3) > img {
+    width: 3rem;
+}
+    .menu {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #ffffff;
+        background-color: #6c6c6c;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        transform: translateX(-100%);
-        transition: transform 0.3sease;
-        z-index: 5;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 10;
     }
 
+    
 .menu.active {
     transform: translateX(0); /* Menu entra na tela quando ativo */
 }
 
-.menu a {
-    color: #000;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-}
+    .menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
 
-/* Botão de fechar */
-.close-btn {
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
+    .close-btn {
+        font-size: 3rem;
+        color: #ffffff;
+        position: absolute;
+        cursor: pointer;
+        top: 1rem;
+        z-index: 1;
+        right: 1rem;
+    }
     header nav ul {
         display: none; /* Esconde o menu tradicional */
     }
@@ -900,16 +918,8 @@ button.button-51 {
         display: block; /* Mostra o botão de menu */
     }
 
-    .close-btn {
-        font-size: 30px;
-        color: #000000;
-        position: absolute;
-        cursor: pointer;
-        top: 9rem;
-        z-index: 1;
-        left: 1rem;
- }
-
+    
+    /*menu mobile*/
     
      
    .name {
