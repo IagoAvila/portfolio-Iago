@@ -710,18 +710,7 @@ body > main > section.flex.items-center.justify-center.text-center.h-screen > di
     text-transform: uppercase;
     color: #525253;
 }
-/* Título das sections */
-    h2.text-3xl.font-light.text-zinc-800 {
-        color: #000;
-        text-transform: uppercase;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-        transition: color 0.3sease;
-        left: 2rem;
-        position: relative;
-        width: 50%;
-    }
-          
+
           h2.text-3xl.font-light.text-zinc-800:hover {
             color: #010695;
           }
@@ -887,7 +876,7 @@ button.button-51 {
         z-index: 10;
     }
 
-    
+
 .menu.active {
     transform: translateX(0); /* Menu entra na tela quando ativo */
 }
@@ -895,11 +884,13 @@ button.button-51 {
     .menu a {
         color: #ffffff;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 2rem;
         padding: 15px;
         text-align: center;
         width: 100%;
+        text-transform: uppercase;
     }
+
 
     .close-btn {
         font-size: 3rem;
@@ -936,16 +927,204 @@ button.button-51 {
         max-width: 100%;
         height: 16%;
     }
-        .tecnologias [class^="devicon-"] {
+    /*section about*/
+
+    section#about-me {
+    margin-top: 10rem;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+p.subtitle {
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+p.about {
+    text-align: start;
+    margin: 3rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px rgb(0 0 0);
+    padding: 30px;
+}
+
+.about-button {
+    display: inline-flex;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+#about-me > div > div > div > a:nth-child(1) > img {
+    width: 3rem;
+       transition: transform 0.3s ease;
+}
+
+#about-me > div > div > div > a:nth-child(2) > img {
+    width: 3rem;
+       transition: transform 0.3s ease;
+}
+
+#about-me a:nth-child(2) > img:hover,
+#about-me > a:nth-child(1) > img:hover{
+  transform: scale(1.1);
+}
+   /*section about*/
+
+/*section xp*/
+section#xp {
+    margin-top: 10rem;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    height: 50vh;
+}
+#xp > h2 {
+    font-size: 2rem;
+}
+
+#xp > div > div > p.subtitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+#xp > div > div > p.xp {
+    margin-top: 3rem;
+    font-size: 22px;
+    text-align: start;
+    padding: 60px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px rgb(0 0 0);
+    transition: transform 0.3s ease;
+}
+
+#xp > div > div > p.xp:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.xp-button {
+    margin-top: 5rem;
+    gap:2rem;
+    display: inline-flex;
+}
+    #xp > div > div > div > a > img {
+        width: 6rem;
+        transition: transform 0.3s ease;
+    }
+#xp > div > div > div > a > img:hover {
+    transform: scale(1.2);
+}
+
+#xp > div > div > p:nth-child(2){
+        margin-top: 3rem;
+    font-size: 22px;
+    text-align: start;
+    padding: 60px;
+    margin-right: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px rgb(0 0 0);
+    transition: transform 0.3s ease;
+}
+#xp > div > div > p:nth-child(2):hover{
+ color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+#xp > div > div > p:nth-child(3){
+      margin-top: 6rem;
+    font-size: 22px;
+    text-align: start;
+    padding: 60px;
+    margin-right: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px rgb(0 0 0);
+    transition: transform 0.3s ease;
+}
+
+#xp > div > div > p:nth-child(3):hover{
+ color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+/*section xp*/
+
+
+/*skills aba*/
+section#Skills {
+    margin-top: 10rem;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    h2.text-3xl.font-light.text-zinc-800.underline.hover\:text-blue-800.uppercase {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+p.text-zinc-600.mt-4.text-sm.md\:text-base {
+        font-size: 1rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+
+
+
+.tecnologias.flex.flex-wrap.justify-center.gap-6.mt-6.text-5xl.aos-init.aos-animate {
+    margin-top: 4rem;
+}
+
+.mt-10.text-left {
+    margin-top: 6rem;
+}
+h3.text-lg.font-semibold.text-zinc-700.mb-2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+    .tecnologias [class^="devicon-"] {
         color: #000;
-        font-size: 5rem;
-        transition: transform 0.3sease, color 0.3sease;
-        display: inline-block;
-        gap: 30px;
-        column-count: 2;
-        padding: 7px 17px;
-        left: 35%;
+        font-size: 4rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: inline;
+        gap: 3rem;
+        padding: 1px 30px;
         position: relative;
         width: 50%;
     }
+#Skills > div.mt-10.text-left > ul {
+    color: #000000;
+    display: inline-grid;
+    gap: 1rem;
+    margin-top: 4rem;
+    border: 1px solid #ffffff;
+    list-style-type: none;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgb(0 0 0);
+    transition: transform 0.3s ease;
+}
+
+#Skills > div.mt-10.text-left > ul:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+    li {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: start;
+    }
+/*skills aba*/
+
+
 }
