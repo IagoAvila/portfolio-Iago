@@ -572,70 +572,23 @@ h3.text-lg.font-semibold.text-zinc-700.mb-2 {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
           }
     
-          .tecnologias [class^="devicon-"] {
-            color: #000;
-            font-size: 5rem;
-            transition: transform 0.3s ease, color 0.3s ease;
-            display: inline-block;
-            gap: 30px;
-            column-count: 2;
-            padding: 7px 17px;
-        }
-          
-          .tecnologias [class^="devicon-"]:hover {
-            color: #010695;
-            transform: translateY(-6px);
-          }
-          
- 
-        p.mt-4.text-lg.text-zinc-600, p.mt-4.text-lg.text-zinc-100 {
-        width: 100vw;
-        max-width: 100vw;
-        position: relative;
-        left: 50%;
-        margin-left: -50vw;
-        margin-bottom: 30px;
-        text-align: justify;
-        padding: 2rem 1rem;
-        font-size: 17px;
-        border-radius: 0;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), radial-gradient(at top center, #01069529 0%, #5c5c5c 120%) #424242;
-        background-blend-mode: multiply, multiply;
-        color: #fff;
-        transition: all 0.3sease;
-    }
-
-          
-          p.mt-4.text-lg.text-zinc-600:hover,
-          p.mt-4.text-lg.text-zinc-100:hover {
-            color: #f1ececbd;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)),
-                        radial-gradient(at top center, #01069529 0%, #010695 120%) #bdccff;
-          }
-          
           /* Lista de experiências */
           ul.list-disc.list-inside.space-y-2 {
             margin-top: 1.5rem;
             padding-left: 1rem;
           }
           
-          ul li {
-            font-size: 1.125rem;
-            color: #e5e5e5;
-          }
+            ul li {
+        font-size: 1.125rem;
+        color: #ffffff;
+    }
    
  
           section#Projetos {
         position: relative;
         top: 20rem;
     }
-    div#skills {
-        display: block;
-        display: grid;
-        position: relative;
-        margin-bottom: 19rem;
-        top: 33rem;
-    }
+
     img.projeto-img {
     width: 159%;
     position: relative;
@@ -711,7 +664,7 @@ body > main > section.flex.items-center.justify-center.text-center.h-screen > di
     color: #525253;
 }
 
-          h2.text-3xl.font-light.text-zinc-800:hover {
+          h2.text-3xl.font-light.text-zinc-800:active {
             color: #010695;
           }
           
@@ -785,8 +738,8 @@ button.button-51 {
         left: 16rem;
     }
 
-        .button-50:hover,
-        .button-51:hover{
+        .button-50:active,
+        .button-51:active{
             background-color: #fff;
             color: #000;
         }
@@ -965,8 +918,8 @@ p.about {
        transition: transform 0.3s ease;
 }
 
-#about-me a:nth-child(2) > img:hover,
-#about-me > a:nth-child(1) > img:hover{
+#about-me a:nth-child(2) > img:active,
+#about-me > a:nth-child(1) > img:active{
   transform: scale(1.1);
 }
    /*section about*/
@@ -985,9 +938,7 @@ section#xp {
 }
 
 #xp > div > div > p.subtitle {
-    font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 4rem;
 }
 #xp > div > div > p.xp {
     margin-top: 3rem;
@@ -1002,55 +953,57 @@ section#xp {
     transition: transform 0.3s ease;
 }
 
-#xp > div > div > p.xp:hover {
+#xp > div > div > p.xp:active {
     color: #fff;
     background-color: #000;
     transform: scale(1.1);
 }
 
-.xp-button {
-    margin-top: 5rem;
-    gap:2rem;
-    display: inline-flex;
-}
-    #xp > div > div > div > a > img {
-        width: 6rem;
+    .xp-button {
+        gap: 2rem;
+        display: inline-flex;
+        margin: 3rem;
+    }
+
+ #xp > div > div > div > a > img {
+        width: 3rem;
         transition: transform 0.3s ease;
     }
-#xp > div > div > div > a > img:hover {
+#xp > div > div > div > a > img:active {
     transform: scale(1.2);
 }
 
-#xp > div > div > p:nth-child(2){
-        margin-top: 3rem;
-    font-size: 22px;
-    text-align: start;
-    padding: 60px;
-    margin-right: 2rem;
-    border: 1px solid #ffffff;
-    border-radius: 60px;
-    box-shadow: 0 4px 10px rgb(0 0 0);
-    transition: transform 0.3s ease;
-}
-#xp > div > div > p:nth-child(2):hover{
+    #xp > div > div > p:nth-child(2) {
+        font-size: 16px;
+        margin: 5px 0px 3rem;
+        text-align: start;
+        padding: 60px;
+        border: 1px solid #ffffff;
+        border-radius: 60px;
+        box-shadow: 0 4px 10px rgb(0 0 0);
+        transition: transform 0.3s ease;
+    }
+
+
+
+#xp > div > div > p:nth-child(2):active{
  color: #fff;
     background-color: #000;
     transform: scale(1.1);
 }
 
-#xp > div > div > p:nth-child(3){
-      margin-top: 6rem;
-    font-size: 22px;
-    text-align: start;
-    padding: 60px;
-    margin-right: 2rem;
-    border: 1px solid #ffffff;
-    border-radius: 60px;
-    box-shadow: 0 4px 10px rgb(0 0 0);
-    transition: transform 0.3s ease;
-}
+    #xp > div > div > p:nth-child(3) {
+        margin: 5px;
+        font-size: 16px;
+        text-align: start;
+        padding: 60px;
+        border: 1px solid #ffffff;
+        border-radius: 60px;
+        box-shadow: 0 4px 10px rgb(0 0 0);
+        transition: transform 0.3s ease;
+    }
 
-#xp > div > div > p:nth-child(3):hover{
+#xp > div > div > p:nth-child(3):active{
  color: #fff;
     background-color: #000;
     transform: scale(1.1);
@@ -1072,13 +1025,11 @@ section#Skills {
         font-size: 2rem;
         text-transform: uppercase;
     }
-p.text-zinc-600.mt-4.text-sm.md\:text-base {
+    p.text-zinc-600.mt-4.text-sm.md\:text-base {
         font-size: 1rem;
-        margin-top: 2rem;
         text-transform: uppercase;
+        margin: 1rem 4rem;
     }
-
-
 
 .tecnologias.flex.flex-wrap.justify-center.gap-6.mt-6.text-5xl.aos-init.aos-animate {
     margin-top: 4rem;
@@ -1101,24 +1052,19 @@ h3.text-lg.font-semibold.text-zinc-700.mb-2 {
         position: relative;
         width: 50%;
     }
-#Skills > div.mt-10.text-left > ul {
-    color: #000000;
-    display: inline-grid;
-    gap: 1rem;
-    margin-top: 4rem;
-    border: 1px solid #ffffff;
-    list-style-type: none;
-    padding: 40px;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgb(0 0 0);
-    transition: transform 0.3s ease;
-}
+    #Skills > div.mt-10.text-left > ul {
+        background-color: #000000;
+        display: inline-grid;
+        gap: 1rem;
+        margin-top: 4rem;
+        border: 1px solid #ffffff;
+        list-style-type: none;
+        padding: 40px;
+        border-radius: 40px;
+        box-shadow: 0 4px 10px rgb(0 0 0);
+        transition: transform 0.3s ease;
+    }
 
-#Skills > div.mt-10.text-left > ul:hover {
-    color: #fff;
-    background-color: #000;
-    transform: scale(1.1);
-}
     li {
         font-size: 25px;
         font-weight: 600;
