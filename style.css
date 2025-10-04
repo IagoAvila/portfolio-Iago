@@ -597,8 +597,8 @@ section#xp {
 }
   }
 @media screen and (min-width: 320px) and (max-width: 783px) {
-main {
-    overflow-x: hidden;
+body{
+    overflow-x:hidden;
 }
  /*foto iago*/
  body > header > img {
@@ -983,7 +983,7 @@ section#xp {
 /*projetos*/
     section#Projetos {
         position: relative;
-        margin-top: 20rem;
+        margin-top: 25rem;
         overflow-x: hidden;
     }
 /* === Container geral do card (define a perspectiva 3D) === */
@@ -1079,15 +1079,13 @@ section#xp {
 
           }
         
-          .tecnologias [class^="devicon-"] {
-            color: #000;
-            font-size: 3rem;
-            transition: transform 0.3s ease, color 0.3s ease;
-            display: inline-block;
-            gap: 30px;
-            column-count: 2;
-            padding: 7px 17px;
-        }
+         .tecnologias [class^="devicon-"] {
+        color: #000;
+        font-size: 3rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: inline-block;
+        margin: 1rem;
+    }
 
             p.text-zinc-600.mt-4.text-sm.md\:text-base {
         margin-top: 4rem;
@@ -1112,9 +1110,9 @@ section#xp {
 .tecnologias i {
   animation: float 3s ease-in-out infinite;
 }
-    .tecnologias.flex.flex-wrap.justify-center.gap-6.mt-6.text-5xl.aos-init.aos-animate {
+.tecnologias.flex.flex-wrap.justify-center.gap-6.mt-6.text-5xl.aos-init.aos-animate {
         margin-top: 4rem;
-        margin-right: -5rem;
+        margin-right: 0rem;
         justify-content: center;
         justify-items: center;
     }
