@@ -26,8 +26,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(135deg, #0023bf 0%, #340862 100%);
-        box-shadow: 0px 4px 10px rgb(39 103 213 / 62%);
+    background-image: linear-gradient(135deg, #000000 0%, #0b006b 100%);
+    box-shadow: 0px 4px 10px rgb(39 103 213 / 62%);
 }
 
     body > main > section.flex.items-center.justify-center.text-center.h-screen > div{              
@@ -595,6 +595,82 @@ section#xp {
     background-color: #000;
     transform: scale(1.1);
 }
+
+    .contact-section {
+        background-image: linear-gradient(135deg, #000000 0%, #0d026c 100%);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        border-radius: 12px;
+        max-width: 408px;
+        margin: 5rem auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        height: 76%;
+    }
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.send-button {
+  background-color: white;
+  color: #340862;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.send-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
   }
 @media screen and (min-width: 320px) and (max-width: 783px) {
 body{
@@ -803,13 +879,13 @@ button.button-51 {
 #menu > a:nth-child(3) > img {
     width: 3rem;
 }
-       .menu {
+  .menu {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-image: linear-gradient(135deg, #000000 0%, #000c50 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1147,5 +1223,78 @@ section#xp {
     background-color: #000;
     transform: scale(1.1);
 }
+    .contact-section {
+        background-image: linear-gradient(135deg, #000000 0%, #0d026c 100%);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        border-radius: 12px;
+        max-width: 408px;
+        margin: 5rem auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        height: 85%;
+    }
 
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.send-button {
+  background-color: white;
+  color: #340862;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.send-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
 }
