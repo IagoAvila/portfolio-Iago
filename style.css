@@ -19,9 +19,8 @@ html, body {
 }
 
 body {
-    background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    padding-bottom: 4rem; 
     overflow-x: hidden;
 }
 
@@ -43,6 +42,7 @@ header {
     nav ul a{
         font-family: 'Quattrocento Sans';
     }
+.page-end-spacer { height: 4rem; }
 
   /*desktop*/
 
@@ -141,13 +141,11 @@ header {
         color: #ffffff;
     }
 
-
-    nav ul a:hover{
-        color: #ebebeb;
-        font-weight: bolder;
-        transition: 05s;
-
-    }
+    nav ul a:hover {
+    color: #ffffff;
+    border-bottom: 3px solid #fff;
+    font-weight: bolder;
+}
 
 
     .button-50, .button-51 {
@@ -249,7 +247,7 @@ header {
         animation: typing 5s steps(40) 0s infinite, blink 2s step-end infinite;
         position: relative;
         text-align: center;
-        top: -15rem;
+        top: -6rem;
         text-transform: uppercase;
     }
    
@@ -280,12 +278,8 @@ header {
             cursor: pointer;
             display: none;
         }
-        li:hover {
-            color: #010695;
-        }
         li {
             font-size: 17px;
-            font-weight: 600;
         }
 
         i.devicon-linkedin-plain {
@@ -371,7 +365,7 @@ section#about-me {
 
 /*xp aba*/
 section#xp {
-        margin-top: 35rem;
+        margin-top: 20rem;
         justify-content: center;
         text-align: center;
         margin-right: 0;
@@ -603,11 +597,11 @@ section#xp {
         padding: 4rem 2rem;
         border-radius: 12px;
         max-width: 408px;
-        margin: 5rem auto;
+        margin: 20rem auto;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        height: 76%;
+        height: auto;
+        max-height: 2500px;
     }
-
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -876,9 +870,19 @@ button.button-51 {
     margin-top: 30rem;
     margin-right: 7rem;
 }    
-#menu > a:nth-child(3) > img {
-    width: 3rem;
-}
+
+
+    #menu > a:nth-child(2) > img{
+        width: 3rem;
+        background-color: #fff;
+        border: 2px solid;
+        border-radius: 8px;
+    }
+    #menu > a:nth-child(3) > img {
+        width: 3rem;
+        background-color: #fff;
+        border-radius: 10px;
+    }
   .menu {
         position: fixed;
         top: 0;
@@ -1232,7 +1236,8 @@ section#xp {
         max-width: 408px;
         margin: 5rem auto;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        height: 85%;
+        height: auto;
+        max-height: 2500px;
     }
 
 .contact-section h2 {
