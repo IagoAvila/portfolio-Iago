@@ -1063,8 +1063,7 @@ section#xp {
 /*projetos*/
     section#Projetos {
         position: relative;
-        margin-top: 25rem;
-        overflow-x: hidden;
+        margin-top: 30rem;
         height: auto;
         max-height: 1500px;
     }
@@ -1188,6 +1187,7 @@ section#xp {
 
             p.text-zinc-600.mt-4.text-sm.md\:text-base {
         margin-top: 4rem;
+        font-size: 15px;
         text-transform: uppercase;
     }
  
