@@ -1065,7 +1065,10 @@ section#xp {
         position: relative;
         margin-top: 25rem;
         overflow-x: hidden;
+        height: auto;
+        max-height: 1500px;
     }
+
 /* === Container geral do card (define a perspectiva 3D) === */
 .projeto-card {
   perspective: 1000px; /* Dá profundidade 3D */
@@ -1095,24 +1098,6 @@ section#xp {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === Verso (descrição) === */
-.descricao-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
-  backface-visibility: hidden;
-  transform: rotateY(180deg); /* Fica de costas inicialmente */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  animation: fadeIn 0.5s ease;
-
-}
 
 /* === Efeito no hover: vira a carta === */
 .projeto-card:hover a {
@@ -1120,14 +1105,48 @@ section#xp {
 }
 
 /* === Grid de cards === */
-.grid.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.gap-6.mt-8 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin: 6rem auto;
-}
+    .grid.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.gap-6.mt-8 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem;
+        margin: 6rem auto;
+        overflow-x: hidden;
+    }   
+    
+      .descricao-overlay {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        position: static !important;
+        background-image: linear-gradient(135deg, #000000 0%, #000c50 100%);
+        color: #f6f5f5;
+        padding: 1.5rem 0px;
+        text-align: center;
+        overflow-y: hidden;
+        text-decoration: none;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+  .descricao-overlay h3 {
+    color: #ffffff;
+    font-weight: 600;
+  }
 
+  .descricao-overlay p {
+    color: #ffffff;
+  }
+
+  .projeto-img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .projeto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 @keyframes fadeIn {
   from { opacity: 0; transform: rotateY(180deg) scale(0.95); }
   to { opacity: 1; transform: rotateY(180deg) scale(1); }
