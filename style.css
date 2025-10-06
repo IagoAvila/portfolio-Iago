@@ -722,13 +722,13 @@ nav ul a:hover{
     }
 
 
-body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
+    body > main > section.flex.items-center.justify-center.text-center.h-screen > div {
         font-size: 3rem;
         text-transform: uppercase;
         color: #525253;
         margin-left: 2rem;
+        margin-top: 3rem;
     }
-
           h2.text-3xl.font-light.text-zinc-800:active {
             color: #010695;
           }
@@ -764,7 +764,7 @@ body > main > section.flex.items-center.justify-center.text-center.h-screen > di
 
     .button-1 {
         position: relative;
-        margin-top: 20rem;
+        margin-top: 30rem;
     }
 button.button-51 {
     padding: 12px 50px;
@@ -1061,12 +1061,12 @@ section#xp {
 }
 
 /*projetos*/
-    section#Projetos {
-        position: relative;
-        margin-top: 30rem;
-        height: auto;
-        max-height: 1500px;
-    }
+section#Projetos {
+  position: relative;
+  margin-top: 30rem;
+  height: auto;
+  overflow: visible;
+}
 
 /* === Container geral do card (define a perspectiva 3D) === */
 .projeto-card {
@@ -1098,20 +1098,14 @@ section#xp {
 }
 
 
-/* === Efeito no hover: vira a carta === */
-.projeto-card:hover a {
-  transform: rotateY(180deg);
-}
-
 /* === Grid de cards === */
-    .grid.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.gap-6.mt-8 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10rem;
-        margin: 6rem auto;
-        overflow-x: hidden;
-    }   
+.grid.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.gap-6.mt-8 {
+  display: grid;
+  justify-content: center;
+  gap: 11rem;
+  margin: 6rem auto;
+  overflow: visible;
+} 
     
       .descricao-overlay {
         opacity: 1 !important;
@@ -1160,7 +1154,7 @@ section#xp {
 
 
         section#Skills {
-        margin-top: 10rem;
+        margin-top: 20rem;
         justify-content: center;
         text-align: center;
         margin-right: 0;
