@@ -44,6 +44,9 @@ header {
     }
 .page-end-spacer { height: 4rem; }
 
+button#open-menu-btn {
+    display: none;
+}
   /*desktop*/
 
   
