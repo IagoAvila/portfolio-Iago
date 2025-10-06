@@ -29,19 +29,24 @@
         </nav>
     </header>
 
-    <div class="menu" id="menu">
-        <span class="close-btn" id="close-btn">&times;</span>
-    <a href="www.linkedin.com/in/iago-ávila-batista" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" width="15px" />
-        </a>
-        <a href="https://github.com/IagoAvila" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github" width="15px" />
-        </a>
-        <a href="#index.html">Home</a>
-        <a href="#about-me">Sobre Mim</a>
-        <a href="#xp">Experiências</a>
-        <a href="#skills">Skills</a>
-    </div>
+  <!-- Botão hamburguer -->
+<button class="menu-btn" id="open-menu-btn">☰</button>
+
+<!-- Menu -->
+<div class="menu" id="menu">
+    <span class="close-btn" id="close-btn">&times;</span>
+
+    <a href="https://www.linkedin.com/in/iago-ávila-batista" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" width="15px" />
+    </a>
+    <a href="https://github.com/IagoAvila" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github" width="15px" />
+    </a>
+    <a href="#index">Home</a>
+    <a href="#about-me">Sobre Mim</a>
+    <a href="#xp">Experiências</a>
+    <a href="#skills">Skills</a>
+</div>
 
     <main>
         <section id="inicial">
@@ -282,56 +287,52 @@ Busco oportunidades para aplicar minhas habilidades em desenvolvimento, análise
   };
 </script>
 <script>
-  const menu = document.getElementById('menu');
-  const closeBtn = document.getElementById('close-btn');
-  const openBtn = document.getElementById('open-menu-btn'); // seu botão hamburguer
-  const links = menu.querySelectorAll('a[href^="#"]');
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("menu");
+    const openBtn = document.getElementById("open-menu-btn");
+    const closeBtn = document.getElementById("close-btn");
+    const links = menu.querySelectorAll('a[href^="#"]');
 
-  // Abre o menu
-  if (openBtn) {
-    openBtn.addEventListener('click', () => {
-      menu.classList.add('active');
+    function openMenu() {
+        menu.classList.add("active");
+        document.body.style.overflow = "hidden"; // trava scroll
+    }
+
+    function closeMenu() {
+        menu.classList.remove("active");
+        document.body.style.overflow = ""; // libera scroll
+    }
+
+    if (openBtn) openBtn.addEventListener("click", openMenu);
+    if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+
+    links.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute("href").substring(1);
+            const target = document.getElementById(targetId);
+
+            closeMenu();
+
+            if (target) {
+                const header = document.querySelector("header");
+                const headerHeight =
+                    header && getComputedStyle(header).position === "fixed"
+                        ? header.offsetHeight
+                        : 0;
+
+                const offset = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+                setTimeout(() => {
+                    window.scrollTo({ top: offset, behavior: "smooth" });
+                }, 300);
+            }
+        });
     });
-  }
-
-  // Fecha o menu no X
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      menu.classList.remove('active');
-    });
-  }
-
-  // Fecha e rola até a seção ao clicar em um link interno
-  links.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const targetId = link.getAttribute('href').substring(1);
-      const target = document.getElementById(targetId);
-
-      // Fecha o menu
-      menu.classList.remove('active');
-
-      // Faz o scroll suave
-      if (target) {
-        const header = document.querySelector('header');
-        const headerHeight =
-          header && getComputedStyle(header).position === 'fixed'
-            ? header.offsetHeight
-            : 0;
-
-        const offset = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-        setTimeout(() => {
-          window.scrollTo({
-            top: offset,
-            behavior: 'smooth',
-          });
-        }, 300); // aguarda o menu sair antes de rolar
-      }
-    });
-  });
+});
 </script>
+
 
 </body>
 </html>
