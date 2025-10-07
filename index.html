@@ -63,17 +63,20 @@
             </div>
         </section>
 
-        <div class="button-1">
-            <a href="https://drive.google.com/file/d/1mS40ItD1AO3DOORIUi7hwsFQbqUumOmv/view?usp=sharing" target="_blank">
-                <button class="button-50" role="button">Currículo</button>
-            </a>
-        </div>
+        <div class="buttons-container">
+  <div class="button-1">
+    <a href="https://drive.google.com/file/d/1mS40ItD1AO3DOORIUi7hwsFQbqUumOmv/view?usp=sharing" target="_blank">
+      <button class="button-50" role="button">Currículo</button>
+    </a>
+  </div>
 
-        <div class="button-2">
-            <a href="#Projetos" target="_blank">
-                <button class="button-51" role="button">Projetos</button>
-            </a>
-        </div>
+  <div class="button-2">
+    <a href="#Projetos">
+      <button class="button-51" role="button">Projetos</button>
+    </a>
+  </div>
+</div>
+
          <section id="about-me">
 <h2 class="typewriter">Transformar ideias em soluções digitais!</h2>
         <div class="about-container">
@@ -145,7 +148,7 @@ Busco oportunidades para aplicar minhas habilidades em desenvolvimento, análise
                         <a href="https://github.com/IagoAvila/formulario-de-cadastro" target="_blank">
                             <img src="assets/formulario.png" alt="Formulário" class="projeto-img">
                                     <div class="descricao-overlay">
-                                    <h3>Formuláio de Cadastro</h3>
+                                    <h3>Formulário de Cadastro</h3>
                                       <p>Formulário criado utilizando angular, APi e typescript.</p>
                      <p class="aviso">Clique para ver o código!</p>
                     </div>
@@ -174,8 +177,8 @@ Busco oportunidades para aplicar minhas habilidades em desenvolvimento, análise
     Tecnologias e ferramentas que utilizo no meu dia a dia de desenvolvimento.
   </p>
 
-  <!-- Ícones de tecnologias -->
-  <div class="tecnologias flex flex-wrap justify-center gap-6 mt-6 text-5xl" data-aos="fade-up">
+<div class="tecnologias justify-center items-center mt-6 text-5xl" data-aos="fade-up">
+
     <i class="devicon-html5-plain" title="HTML5"></i>
     <i class="devicon-css3-plain" title="CSS3"></i>
     <i class="devicon-javascript-plain" title="JavaScript"></i>
@@ -189,7 +192,6 @@ Busco oportunidades para aplicar minhas habilidades em desenvolvimento, análise
     <i class="devicon-github-original" title="GitHub"></i>
   </div>
 
-  <!-- Soft skills opcionais -->
   <div class="mt-10 text-left">
     <h3 class="text-lg font-semibold text-zinc-700 mb-2">Soft Skills</h3>
     <ul class="list-disc list-inside text-sm text-zinc-600">
@@ -272,8 +274,8 @@ Busco oportunidades para aplicar minhas habilidades em desenvolvimento, análise
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000, // duração do efeito
-            once: true, // anima só na primeira vez que aparece
+            duration: 1000, 
+            once: true, 
         });
     </script>
     <script>
@@ -295,12 +297,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function openMenu() {
         menu.classList.add("active");
-        document.body.style.overflow = "hidden"; // trava scroll
+        document.body.style.overflow = "hidden"; 
     }
 
     function closeMenu() {
         menu.classList.remove("active");
-        document.body.style.overflow = ""; // libera scroll
+        document.body.style.overflow = ""; 
     }
 
     if (openBtn) openBtn.addEventListener("click", openMenu);
