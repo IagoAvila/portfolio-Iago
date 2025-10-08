@@ -101,7 +101,6 @@ button#open-menu-btn {
 
     .name {
         position: relative;
-        left: -9rem;
         color: #010695;
     }
 
@@ -641,6 +640,59 @@ section#xp {
   font-size: 1rem;
 }
 
+
+    footer {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        background-image: linear-gradient(135deg, #000000fa 0%, #0b006b 100%);
+        color: #fff1f1;
+        padding: 3rem 8rem;
+        box-shadow: 0 0 12px rgb(10 117 184);
+    }
+body > main > footer > div.footer-info > img {
+    border-radius: 90px;
+    width: 3rem;
+    margin: 0rem -5rem 2rem;
+}
+    body > main > footer > div.footer-info > h3 {
+    font-family: 'Quattrocento Sans';
+    font-size: 1rem;
+    margin: -5rem 10rem 0rem 5rem;
+}
+body > main > footer > div.footer-info > h3 > a:hover {
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin: 0.2rem 0;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+     .footer-social a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 42px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background 0.3s;
+        margin-left: 5rem;
+    }
+
+
+.footer-social a:hover {
+  background-color: #777;
+}
   }
 @media screen and (min-width: 320px) and (max-width: 783px) {
 body{
@@ -879,7 +931,7 @@ button.button-51 {
     transform: translateX(0); /* Menu entra na tela quando ativo */
 }
 
-    .menu a {
+       .menu a {
         color: #ffffff;
         text-decoration: none;
         font-size: 2rem;
@@ -887,6 +939,7 @@ button.button-51 {
         text-align: center;
         width: 100%;
         text-transform: uppercase;
+        font-weight: 300;
     }
 
 
@@ -997,6 +1050,7 @@ section#xp {
     font-size: 2rem;
 }
 
+
 /*section xp*/
 .xp-container {
   display: grid;
@@ -1021,6 +1075,7 @@ section#xp {
   font-size: 1.2rem;
   font-weight: bold;
   color: #111;
+  text-transform: uppercase;
 }
 
 .xp-date {
@@ -1093,17 +1148,25 @@ section#Projetos {
         text-align: center;
         overflow-y: hidden;
         text-decoration: none;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
-  .descricao-overlay h3 {
-    color: #ffffff;
-    font-weight: 600;
-  }
+     .descricao-overlay h3 {
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: 'Quattrocento Sans';
+        text-decoration: none;
+    }
+
 
   .descricao-overlay p {
     color: #ffffff;
-  }
+    font-size: 10px;
+    font-family: 'Quattrocento Sans';
+        margin-top: 1rem;
+    }
 
   .projeto-img {
     display: block;
@@ -1147,18 +1210,19 @@ section#Projetos {
 
           }
         
-         .tecnologias [class^="devicon-"] {
+    .tecnologias [class^="devicon-"] {
         color: #000;
         font-size: 3rem;
         transition: transform 0.3s ease, color 0.3s ease;
         display: inline-block;
-        margin: 1rem;
+        margin: 0.4rem;
     }
 
-            p.text-zinc-600.mt-4.text-sm.md\:text-base {
+    p.text-zinc-600.mt-4.text-sm.md\:text-base {
         margin-top: 4rem;
         font-size: 15px;
         text-transform: uppercase;
+        margin-bottom: 2rem;
     }
  
 .tecnologias i {
@@ -1204,13 +1268,13 @@ section#Projetos {
         transition: transform 0.3s ease;
     }
 
-    h3.text-lg.font-semibold.text-zinc-700.mb-2{
-    margin: 3rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
+    h3.text-lg.font-semibold.text-zinc-700.mb-2 {
+        margin: 3rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+    }
 #Skills > div.mt-10.text-left > ul:hover {
     color: #fff;
     background-color: #000;
@@ -1290,5 +1354,59 @@ section#Projetos {
 #form-status {
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+
+    footer {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        background-image: linear-gradient(135deg, #000000fa 0%, #0b006b 100%);
+        color: #fff1f1;
+        padding: 3rem 0rem;
+        box-shadow: 0 0 12px rgb(10 117 184);
+    }
+body > main > footer > div.footer-info > img {
+    border-radius: 90px;
+    width: 3rem;
+    margin: 1rem 1rem 2rem;
+}
+  body > main > footer > div.footer-info > h3 {
+    font-family: 'Quattrocento Sans';
+    font-size: 1rem;
+    margin: -5rem 10rem 0rem 5rem;
+}
+body > main > footer > div.footer-info > h3 > a:hover {
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin: 0.2rem 0;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+     .footer-social a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 42px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background 0.3s;
+        margin-left: 5rem;
+    }
+
+
+.footer-social a:hover {
+  background-color: #777;
 }
 }
